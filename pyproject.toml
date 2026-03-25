@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "discordformatlib"
+version = "0.2.0"
+description = "Transport-agnostic Discord message formatter — text, markdown, tables, images"
+requires-python = ">=3.10"
+dependencies = [
+    "Pillow>=10.0",
+    "matplotlib>=3.7",
+    "markdown>=3.4",
+]
+
+[project.optional-dependencies]
+image = ["playwright>=1.40"]
+dev = ["pytest>=7.0"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["discord_formatter*"]
