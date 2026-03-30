@@ -1,5 +1,7 @@
 # discordformatlib
 
+[![Follow on X](https://img.shields.io/badge/follow-%40boschzilla-black.svg?logo=x)](https://x.com/boschzilla)
+
 Transport-agnostic Discord message formatter. Converts text, markdown, tables, and images into `DiscordPayload` objects ready to send via any Discord bot or API client.
 
 ## Install
